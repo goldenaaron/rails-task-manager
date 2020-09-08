@@ -1,0 +1,6 @@
+<h1>This is fun! Thanks Guido let's have dinner in Bali</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= link_to task.title, task_path(task) %></li>
+  <% end %>
+</ul>
